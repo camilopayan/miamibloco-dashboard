@@ -81,7 +81,7 @@ window.DASHBOARD_DATA = {
       "raisedCents": 0,
       "goalCents": 30500,
       "urn": "0wqypf",
-      "photo": "https://imagecdn.mightycause.com/d8fa0049-60a5-4390-91a9-b2d670a02902/-/crop/629x353/647,326/-/preview/-/resize/300/"
+      "photo": "https://imagecdn.mightycause.com/6831a7a1-4d45-4c66-aa09-7d5f02bc2d2c/-/crop/777x436/365,267/-/preview/-/resize/300/"
     },
     {
       "name": "Amber",
@@ -199,15 +199,6 @@ window.DASHBOARD_DATA = {
       "photo": "https://imagecdn.mightycause.com/67ea9aee-d9f0-4e7e-954a-1282e24ba695/-/crop/1170x660/0,897/-/preview/-/resize/300/"
     },
     {
-      "name": "Brenda",
-      "instruments": [],
-      "role": "Passista",
-      "raisedCents": 0,
-      "goalCents": 30500,
-      "urn": "Huxc0g",
-      "photo": "https://imagecdn.mightycause.com/cb7a4485-3d18-4ee7-a4e6-84478f525541/-/crop/6000x3375/0,0/-/preview/-/resize/300/"
-    },
-    {
       "name": "Cam",
       "instruments": [
         "Caixa"
@@ -301,6 +292,28 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "88r2mf",
       "photo": "https://imagecdn.mightycause.com/23e76105-4585-42c9-bf07-17184a50ddd2/-/crop/3024x1702/0,714/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Eric",
+      "instruments": [
+        "Caixa"
+      ],
+      "role": "Student Member",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "58r90g",
+      "photo": "https://imagecdn.mightycause.com/32e7f4fd-45de-4c36-a674-3cf4755e4090/-/crop/920x516/448,187/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Fernanda",
+      "instruments": [
+        "Caixa"
+      ],
+      "role": "Student Member",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "65oawe",
+      "photo": "https://imagecdn.mightycause.com/e2cb8746-bb27-450a-8dba-28d00446c422/-/crop/700x395/543,309/-/preview/-/resize/300/"
     },
     {
       "name": "Flavia",
@@ -497,6 +510,17 @@ window.DASHBOARD_DATA = {
       "photo": "https://imagecdn.mightycause.com/ecdd8523-6b96-4c83-837b-5062c020011c/-/crop/1020x573/0,149/-/preview/-/resize/300/"
     },
     {
+      "name": "Luli",
+      "instruments": [
+        "Caixa"
+      ],
+      "role": "Student Member",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "byz70g",
+      "photo": "https://imagecdn.mightycause.com/cfd34bc6-06c6-4196-8bae-80c741b9ee45/-/crop/1101x620/457,131/-/preview/-/resize/300/"
+    },
+    {
       "name": "Lylliette",
       "instruments": [
         "Caixa"
@@ -517,6 +541,17 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "Nbfr8f",
       "photo": "https://imagecdn.mightycause.com/6662efc4-ac4f-440b-ad8f-0edabcf541af/-/crop/6000x3375/0,313/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Maria",
+      "instruments": [
+        "Caixa"
+      ],
+      "role": "Student Member",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "m0z52f",
+      "photo": "https://imagecdn.mightycause.com/aaf4fa76-2629-427c-8f24-270e8438a3fc/-/crop/1179x663/0,302/-/preview/-/resize/300/"
     },
     {
       "name": "Maria",
@@ -592,15 +627,6 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "d2hz3f",
       "photo": "https://imagecdn.mightycause.com/c3fd3e8a-b9ef-42d8-8cbf-d3b62e877112/-/crop/400x225/0,37/-/preview/-/resize/300/"
-    },
-    {
-      "name": "Michelle",
-      "instruments": [],
-      "role": "Passista",
-      "raisedCents": 0,
-      "goalCents": 30500,
-      "urn": "up2cye",
-      "photo": "https://imagecdn.mightycause.com/b9f9ede2-23f6-43af-bece-21126068924f/-/crop/4473x2518/689,942/-/preview/-/resize/300/"
     },
     {
       "name": "Michelle",
@@ -755,15 +781,17 @@ window.DASHBOARD_DATA = {
       "photo": "https://imagecdn.mightycause.com/2a2e2323-1a66-4db0-aeb5-2b376a0a33ff/-/crop/3484x1962/204,675/-/preview/-/resize/300/"
     },
     {
-      "name": "Tanguy",
+      "name": "Tanguy-Repique, Juliette-Tamborim, & Tom-Surdo",
       "instruments": [
-        "Repique"
+        "Repique",
+        "Surdo",
+        "Tamborim"
       ],
       "role": "Student Member",
       "raisedCents": 0,
       "goalCents": 30500,
       "urn": "J09r9f",
-      "photo": "https://imagecdn.mightycause.com/393e2331-7ef3-4593-a971-5417a70c4059/-/crop/6000x3375/0,120/-/preview/-/resize/300/"
+      "photo": "https://imagecdn.mightycause.com/2729f114-00c0-41eb-b89f-bdd407af28bc/-/crop/1221x686/66,274/-/preview/-/resize/300/"
     },
     {
       "name": "VP KeKe",
