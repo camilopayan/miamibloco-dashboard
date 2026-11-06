@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find a Miamibloco Fundraiser | Give Miami Day</title>
+  <meta name="description" content="Search Miamibloco's Give Miami Day fundraisers by name, instrument, or role and jump straight to their page.">
+  <meta name="theme-color" content="#2C2627">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232C2627'/%3E%3Ccircle cx='32' cy='32' r='17' fill='%23F6B53C'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23F54500'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F2EAD4;
+      --cream-light: #FBF6E7;
+      --cream-white: #FFFDF6;
+      --ink: #2C2627;
+      --ink-soft: #6E6259;
+      --gold: #F6B53C;
+      --orange: #F54500;
+      --green: #10BC7D;
+      --neon: #5BF986;
+      --purple: #6A3EBD;
+      --pink: #FF4D8D;
+      --line: 2px solid var(--ink);
+      --shadow-sm: 3px 3px 0 var(--ink);
+      --shadow-md: 6px 6px 0 var(--ink);
+      --shadow-lg: 8px 8px 0 var(--ink);
+      --wrap: 1120px;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 4% 8%, rgba(246, 181, 60, .28), transparent 26rem),
+        radial-gradient(circle at 96% 24%, rgba(245, 69, 0, .12), transparent 24rem),
+        radial-gradient(circle at 12% 78%, rgba(16, 188, 125, .14), transparent 28rem),
+        var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: .45;
+      background-image: radial-gradient(rgba(44, 38, 39, .16) .7px, transparent .7px);
+      background-size: 18px 18px;
+      mask-image: linear-gradient(to bottom, black, transparent 75%);
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: inherit; }
+
+    :focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 3px;
+    }
+
+    .wrap {
+      width: min(var(--wrap), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      padding: 10px 14px;
+      background: var(--cream-light);
+      border: var(--line);
+      border-radius: 10px;
+      box-shadow: var(--shadow-sm);
+      font-weight: 700;
+      text-decoration: none;
+      transform: translateY(-160%);
+      transition: transform .15s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    /* ---------- Header ---------- */
+
+    .site-header {
+      background: var(--ink);
+      color: var(--cream);
+      border-bottom: 3px solid var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .site-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .55;
+      background:
+        linear-gradient(115deg, transparent 0 46%, rgba(246, 181, 60, .14) 46% 52%, transparent 52%),
+        linear-gradient(115deg, transparent 0 58%, rgba(245, 69, 0, .16) 58% 62%, transparent 62%),
+        linear-gradient(115deg, transparent 0 68%, rgba(16, 188, 125, .14) 68% 71%, transparent 71%);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      min-height: 78px;
+      padding-block: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand img {
+      width: auto;
+      height: 48px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .event-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1.5px solid rgba(242, 234, 212, .55);
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .event-pill::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--neon);
+      box-shadow: 0 0 0 3px rgba(91, 249, 134, .18);
+    }
+
+    .header-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--cream);
+      font-size: .9rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(242, 234, 212, .4);
+      padding-bottom: 2px;
+    }
+
+    .header-link:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+      padding: 58px 0 46px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 16px;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      border-radius: 99px;
+      background: var(--orange);
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-family: "Archivo Black", "Arial Black", ui-sans-serif, sans-serif;
+      font-size: clamp(2.7rem, 7.2vw, 5.5rem);
+      font-weight: 400;
+      line-height: .94;
+      letter-spacing: -.045em;
+      text-wrap: balance;
+    }
+
+    h1 .mark {
+      position: relative;
+      display: inline-block;
+      z-index: 0;
+      white-space: nowrap;
+    }
+
+    h1 .mark::after {
+      content: "";
+      position: absolute;
+      left: -.03em;
+      right: -.03em;
+      bottom: .04em;
+      height: .21em;
+      background: var(--gold);
+      border-radius: 3px;
+      transform: rotate(-1.4deg);
+      z-index: -1;
+    }
+
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 30px;
+      font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+      color: #554a42;
+      text-wrap: pretty;
+    }
+
+    .lede strong {
+      color: var(--ink);
+    }
+
+    /* ---------- Search ---------- */
+
+    .search-area {
+      max-width: none;
+    }
+
+    .search-box,
+    .search-meta {
+      max-width: 900px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 11px 13px 11px 18px;
+      background: var(--cream-white);
+      border: 3px solid var(--ink);
+      border-radius: 18px;
+      box-shadow: var(--shadow-lg);
+      transition: box-shadow .16s ease, transform .16s ease, background .16s ease;
+    }
+
+    .search-box:focus-within {
+      background: #fff;
+      box-shadow: 8px 8px 0 var(--orange);
+      transform: translate(-2px, -2px);
+    }
+
+    .search-icon {
+      flex: 0 0 auto;
+      width: 26px;
+      height: 26px;
+      color: var(--ink);
+    }
+
+    #person-search {
+      flex: 1 1 auto;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      font-size: clamp(1.05rem, 2vw, 1.32rem);
+      font-weight: 500;
+      padding: 10px 0;
+      appearance: none;
+    }
+
+    #person-search::placeholder {
+      color: #9B8D80;
+      opacity: 1;
+    }
+
+    #person-search::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    .clear-button {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      padding: 0;
+      border: 2px solid var(--ink);
+      border-radius: 50%;
+      background: var(--cream);
+      color: var(--ink);
+      cursor: pointer;
+      font: inherit;
+      font-size: 1.2rem;
+      line-height: 1;
+      transition: background .12s ease, transform .12s ease;
+    }
+
+    .clear-button:hover {
+      background: var(--gold);
+      transform: rotate(8deg);
+    }
+
+    .key-hint {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--ink-soft);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+
+    .key-hint kbd {
+      display: inline-grid;
+      place-items: center;
+      min-width: 25px;
+      height: 25px;
+      padding: 0 6px;
+      background: var(--cream);
+      border: 1.5px solid #B9AB99;
+      border-bottom-width: 3px;
+      border-radius: 6px;
+      color: var(--ink);
+      font-family: inherit;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .search-meta {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px 24px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      padding-inline: 3px;
+    }
+
+    .search-hint {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: .88rem;
+    }
+
+    .search-hint b {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .search-status {
+      margin: 0;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+
+    /* ---------- People results ---------- */
+
+    .people-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 13px;
+      margin: 22px 0 0;
+      padding: 0;
+    }
+
+    .person-item[hidden] {
+      display: none;
+    }
+
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      height: 100%;
+      padding: 12px 13px;
+      background: var(--cream-white);
+      border: 2px solid var(--ink);
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+    }
+
+    .person:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--ink);
+      background: #fff;
+    }
+
+    .person:active {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0 var(--ink);
+    }
+
+    .avatar {
+      position: relative;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      overflow: hidden;
+      border: 2px solid var(--ink);
+      border-radius: 50%;
+      background:
+        linear-gradient(145deg, color-mix(in srgb, var(--accent, var(--gold)) 70%, white), var(--accent, var(--gold)));
+      color: var(--ink);
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1rem;
+      letter-spacing: -.03em;
+    }
+
+    .avatar img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .person-body {
+      flex: 1 1 auto;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .person-name {
+      overflow: hidden;
+      font-size: 1.06rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -.015em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .tags {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .025em;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+
+    .tag-instrument {
+      border: 1.5px solid var(--ink);
+      background: color-mix(in srgb, var(--accent, var(--gold)) 30%, var(--cream-white));
+    }
+
+    .tag-role {
+      border: 1.5px solid #C9BBA8;
+      color: #615349;
+      background: transparent;
+    }
+
+    .tag-note {
+      border: 1.5px dashed #B9AB99;
+      color: #6E6259;
+      background: transparent;
+    }
+
+    .person-money {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1px;
+      margin-left: auto;
+      text-align: right;
+      line-height: 1.15;
+    }
+
+    .person-money strong {
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+
+    .person-money span {
+      font-size: .67rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+
+    .go {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 27px;
+      height: 27px;
+      margin-left: 1px;
+      border: 2px solid var(--ink);
+      border-radius: 50%;
+      font-size: .82rem;
+      font-weight: 700;
+      transition: background .14s ease, transform .14s ease;
+    }
+
+    .person:hover .go {
+      background: var(--gold);
+      transform: rotate(8deg);
+    }
+
+    .empty-state {
+      margin-top: 22px;
+      padding: 32px 24px;
+      text-align: center;
+      background: var(--cream-light);
+      border: 2px dashed #A99A88;
+      border-radius: var(--radius);
+    }
+
+    .empty-state[hidden] {
+      display: none;
+    }
+
+    .noscript {
+      max-width: 900px;
+      margin: 22px 0 0;
+      padding: 14px 16px;
+      background: var(--cream-light);
+      border: 2px dashed #A99A88;
+      border-radius: 12px;
+      color: #554A42;
+      font-size: .9rem;
+    }
+
+    .noscript a {
+      color: var(--ink);
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+
+    .empty-state h2 {
+      margin: 0 0 8px;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+
+    .empty-state p {
+      max-width: 480px;
+      margin: 0 auto 18px;
+      color: var(--ink-soft);
+      font-size: .94rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border: 2px solid var(--ink);
+      border-radius: 10px;
+      background: var(--gold);
+      color: var(--ink);
+      box-shadow: var(--shadow-sm);
+      font: inherit;
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    }
+
+    .button:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0 var(--ink);
+      background: #FFC65A;
+    }
+
+    /* ---------- Stats ---------- */
+
+    .stats {
+      padding: 10px 0 30px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1.45fr repeat(3, 1fr);
+      gap: 13px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 132px;
+      padding: 17px 18px;
+      background: var(--cream-light);
+      border: 2px solid var(--ink);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat--goal {
+      background: var(--gold);
+    }
+
+    .stat-label {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #5D5148;
+    }
+
+    .stat--goal .stat-label {
+      color: #4A3E27;
+    }
+
+    .stat-value {
+      margin-top: 8px;
+      font-family: "Archivo Black", sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.045em;
+    }
+
+    .stat-note {
+      margin-top: 7px;
+      font-size: .78rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+    }
+
+    .stat--goal .stat-note {
+      color: #4A3E27;
+    }
+
+    .mini-track {
+      width: 100%;
+      height: 9px;
+      margin-top: 11px;
+      overflow: hidden;
+      background: rgba(44, 38, 39, .18);
+      border-radius: 999px;
+    }
+
+    .mini-track span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--ink);
+    }
+
+    /* ---------- Group leaderboards ---------- */
+
+    .groups {
+      padding: 26px 0 54px;
+    }
+
+    .search-section {
+      padding: 18px 0 64px;
+      border-top: 1.5px solid #D4C6B2;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px 32px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-family: "Archivo Black", sans-serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+
+    .section-head p {
+      max-width: 470px;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: .9rem;
+      text-wrap: pretty;
+    }
+
+    .panel {
+      padding: 20px 20px 23px;
+      background: var(--cream-light);
+      border: 2px solid var(--ink);
+      border-radius: 20px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 13px;
+      margin-bottom: 3px;
+      border-bottom: 1.5px solid #D4C6B2;
+    }
+
+    .panel-head h3 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1.08rem;
+      font-weight: 400;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+    }
+
+    .panel-head h3::before {
+      content: "";
+      width: 9px;
+      height: 20px;
+      border-radius: 3px;
+      background: var(--accent, var(--orange));
+      transform: rotate(-5deg);
+    }
+
+    .panel-tag {
+      padding: 3px 8px;
+      border: 1.5px solid #C9BBA8;
+      border-radius: 999px;
+      color: var(--ink-soft);
+      font-size: .64rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .group-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .group-row {
+      padding: 16px 0 0;
+    }
+
+    .group-row + .group-row {
+      margin-top: 15px;
+      border-top: 1px dashed #D4C6B2;
+    }
+
+    .group-head {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 8px;
+    }
+
+    .rank {
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 24px;
+      height: 24px;
+      border: 1.5px solid currentColor;
+      border-radius: 50%;
+      font-size: .68rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .group-name {
+      flex: 1 1 auto;
+      overflow: hidden;
+      font-size: .95rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -.01em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .group-pct {
+      flex: 0 0 auto;
+      font-family: "Archivo Black", sans-serif;
+      font-size: .94rem;
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+
+    .track {
+      width: 100%;
+      height: 11px;
+      overflow: hidden;
+      background: #DED2BF;
+      border-radius: 999px;
+      box-shadow: inset 0 1px 2px rgba(44, 38, 39, .1);
+    }
+
+    .fill {
+      display: block;
+      height: 100%;
+      min-width: 0;
+      border-radius: inherit;
+      background: var(--accent, var(--gold));
+      transition: width .6s cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .group-sub {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 6px;
+      color: var(--ink-soft);
+      font-size: .72rem;
+      font-weight: 600;
+    }
+
+    .group-row--empty {
+      color: #8A7C6E;
+    }
+
+    .group-row--empty .track {
+      background:
+        repeating-linear-gradient(135deg, #DED2BF 0 6px, transparent 6px 12px);
+      box-shadow: none;
+    }
+
+    .group-row--empty .group-name,
+    .group-row--empty .group-pct {
+      color: #7B6D60;
+    }
+
+    .leaderboard-note {
+      margin: 16px 0 0;
+      color: var(--ink-soft);
+      font-size: .76rem;
+      line-height: 1.55;
+    }
+
+    .leaderboard-note strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    /* ---------- Footer ---------- */
+
+    .site-footer {
+      padding: 28px 0 34px;
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px 36px;
+      flex-wrap: wrap;
+    }
+
+    .footer-main {
+      max-width: 560px;
+    }
+
+    .footer-title {
+      margin: 0 0 5px;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+
+    .footer-main p {
+      margin: 0;
+      color: #C8BCA9;
+      font-size: .82rem;
+      line-height: 1.6;
+    }
+
+    .footer-main a,
+    .footer-meta a {
+      color: var(--cream);
+      font-weight: 600;
+      text-decoration-color: rgba(242, 234, 212, .45);
+      text-underline-offset: 3px;
+    }
+
+    .footer-main a:hover,
+    .footer-meta a:hover {
+      color: var(--gold);
+    }
+
+    .footer-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      color: #AFA393;
+      font-size: .74rem;
+      line-height: 1.55;
+    }
+
+    .footer-meta strong {
+      color: var(--neon);
+      font-weight: 600;
+    }
+
+    /* ---------- Responsive ---------- */
+
+    @media (max-width: 900px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .people-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        width: min(var(--wrap), calc(100% - 28px));
+      }
+
+      .header-inner {
+        min-height: 68px;
+      }
+
+      .brand img {
+        height: 38px;
+      }
+
+      .header-link {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 38px;
+      }
+
+      .people-list {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .search-box {
+        gap: 10px;
+        padding-left: 14px;
+        box-shadow: 5px 5px 0 var(--ink);
+      }
+
+      .search-box:focus-within {
+        box-shadow: 5px 5px 0 var(--orange);
+      }
+
+      .key-hint {
+        display: none;
+      }
+
+      .search-meta {
+        display: block;
+      }
+
+      .search-status {
+        margin-top: 5px;
+        white-space: normal;
+      }
+
+      .stat {
+        min-height: 118px;
+        padding: 14px;
+      }
+
+      .panel {
+        padding: 17px 15px 20px;
+        box-shadow: 4px 4px 0 var(--ink);
+      }
+    }
+
+    @media (max-width: 440px) {
+      .event-pill {
+        font-size: .64rem;
+        padding: 6px 10px;
+      }
+
+      .person {
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .avatar {
+        width: 46px;
+        height: 46px;
+      }
+
+      .person-money strong {
+        font-size: .9rem;
+      }
+
+      .person-money span {
+        font-size: .6rem;
+      }
+
+      .go {
+        display: none;
+      }
+
+      .stats-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .stat {
+        min-height: 104px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#search">Skip to fundraiser search</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Miamibloco fundraiser finder">
+        <img src="https://images.squarespace-cdn.com/content/v1/621d7305452eb375ba5ffccb/ec5b6c3a-22a7-417d-bc7a-0200630e10a2/miamibloco+full+logo+cream+w+color.png?format=750w" alt="Miamibloco" width="750" height="418">
+      </a>
+      <div class="header-right">
+        <span class="event-pill">Give Miami Day</span>
+        <a class="header-link" href="https://www.givemiamiday.org/organization/Miamibloco" target="_blank" rel="noopener">
+          Organization page <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <p class="eyebrow">Miamibloco · The Heartbeat of Miami</p>
+        <h1 id="page-title">Find your <span class="mark">person</span>.</h1>
+        <p class="lede">
+          All 74 drummers, teaching artists, and passistas have a Give Miami Day page.
+          <strong>Type a name</strong> to jump straight to theirs, or browse the whole bloco below.
+        </p>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Campaign totals">
+      <div class="wrap">
+        <div class="stats-grid">
+          <div class="stat stat--goal">
+            <span class="stat-label">Overall progress</span>
+            <div>
+              <div class="stat-value" id="overall-pct">0%</div>
+              <div class="stat-note"><span id="overall-raised">$0</span> raised of <span id="overall-goal">$25,000</span> goal</div>
+              <div class="mini-track" aria-hidden="true"><span id="overall-fill" style="width:0%"></span></div>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Raised so far</span>
+            <div>
+              <div class="stat-value" id="stat-raised">$0</div>
+              <div class="stat-note">Across all personal pages</div>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Fundraisers</span>
+            <div>
+              <div class="stat-value" id="stat-people">74</div>
+              <div class="stat-note">Searchable on this page</div>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Participating</span>
+            <div>
+              <div class="stat-value" id="stat-participating">0%</div>
+              <div class="stat-note" id="stat-participating-note">0 of 74 have raised more than $0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="groups" aria-labelledby="groups-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="groups-title">Participation by section</h2>
+          <p>Each section’s participation is the share of its people who have raised any amount. A $0 page has not participated yet; anything above $0 counts.</p>
+        </div>
+
+        <section class="panel" aria-labelledby="sections-title" style="--accent: var(--orange)">
+          <div class="panel-head">
+            <h3 id="sections-title">By Section</h3>
+            <span class="panel-tag">Leaderboard</span>
+          </div>
+          <ol class="group-list" id="section-groups"></ol>
+        </section>
+
+        <p class="leaderboard-note">
+          <strong>How it adds up:</strong> participation = people in the section with more than $0 raised ÷ people in the section.
+          A $0 page has not participated yet. Joint pages like Geisy &amp; JJ count in each section they appear in.
+        </p>
+      </div>
+    </section>
+    <section class="search-section" id="search" aria-labelledby="search-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="search-title">Find a fundraiser</h2>
+          <p>74 personal pages. Search by name, instrument, or role — every result opens that person’s Give Miami Day page.</p>
+        </div>
+
+        <div class="search-area">
+          <div class="search-box" role="search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5"></circle>
+              <path d="m15.5 15.5 4 4"></path>
+            </svg>
+            <label class="sr-only" for="person-search">Search fundraisers by name, instrument, or role</label>
+            <input
+              id="person-search"
+              type="search"
+              placeholder="Type a name…"
+              autocomplete="off"
+              autocapitalize="words"
+              spellcheck="false"
+              aria-controls="people-list"
+              aria-describedby="search-hint search-status"
+            >
+            <button class="clear-button" id="clear-search" type="button" aria-label="Clear search" hidden>×</button>
+            <span class="key-hint" aria-hidden="true"><kbd>/</kbd> to search</span>
+          </div>
+
+          <div class="search-meta">
+            <p class="search-hint" id="search-hint">Try <b>Guillermo</b>, <b>Caixa</b>, or <b>Passista</b>.</p>
+            <p class="search-status" id="search-status" role="status" aria-live="polite">Showing all 74 people</p>
+          </div>
+
+          <noscript>
+            <p class="noscript">Search needs JavaScript. You can still browse all 74 pages on the <a href="https://www.givemiamiday.org/organization/Miamibloco" target="_blank" rel="noopener">Give Miami Day organization page ↗</a>.</p>
+          </noscript>
+
+          <ul class="people-list" id="people-list" aria-label="Miamibloco fundraisers"></ul>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <h2>No one by that name — yet.</h2>
+            <p>Try a first name, an instrument like “Caixa”, or a role like “Passista”. Every page is listed here.</p>
+            <button class="button" id="reset-search" type="button">Show everyone</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-main">
+        <p class="footer-title">Miamibloco fundraiser finder</p>
+        <p>
+          Data snapshot: <span id="snapshot-date">November 5, 2026</span>.
+          Source: <a href="https://www.givemiamiday.org/organization/Miamibloco" target="_blank" rel="noopener">givemiamiday.org/organization/Miamibloco ↗</a>.
+          All 74 pages were loaded from the campaign’s paginated list. This is an independent helper page, not an official Give Miami Day page.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <span><strong id="footer-totals">$0 raised · 0% of goal</strong></span>
+        <span id="footer-people">74 personal pages · 0 participating · 9 teaching artists · 3 passistas</span>
+        <span>Search, browse, and share the bloco.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    /*
+      Data lives in data.js, generated by scripts/scrape.py.
+      Each person's Give Miami Day link is:
+      https://www.givemiamiday.org/story/<urn>
+    */
+    if (!window.DASHBOARD_DATA) {
+      const status = document.getElementById("search-status");
+      if (status) {
+        status.textContent = "Could not load data.js. Run python3 scripts/scrape.py, then refresh.";
+      }
+      throw new Error("data.js is missing or failed to load");
+    }
+
+    const { campaign: CAMPAIGN, fundraisers: FUNDRAISERS } = window.DASHBOARD_DATA;
+
+    const INSTRUMENT_COLORS = {
+      "Repique": "#F54500",
+      "Caixa": "#F6B53C",
+      "Surdo": "#10BC7D",
+      "Tamborim": "#6A3EBD",
+      "Ganzá": "#FF4D8D",
+      "Timbau": "#0E8BD6",
+      "Agogô": "#B8860B",
+      "Chocalho": "#00A6A6",
+      "Cuíca": "#E0359B",
+      "Malandro": "#7A8B2E"
+    };
+
+    const SECTION_COLORS = {
+      ...INSTRUMENT_COLORS,
+      "Teaching Artist": "#7A8B2E",
+      "Passista": "#E0359B"
+    };
+
+    const INSTRUMENT_GROUPS = ["Caixa", "Repique", "Surdo", "Tamborim", "Ganzá", "Timbau"];
+    const SECTION_GROUPS = [...INSTRUMENT_GROUPS, "Teaching Artist", "Passista"];
+
+    const currency = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0
+    });
+
+    const normalize = (value) => String(value)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim();
+
+    const money = (cents) => currency.format(cents / 100);
+
+    const percentLabel = (pct) => {
+      if (pct === null) return "—";
+      const rounded = Math.round(pct * 10) / 10;
+      return `${Number.isInteger(rounded) ? rounded : rounded.toFixed(1)}%`;
+    };
+
+    const escapeHtml = (value) => String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+    const personSlug = (person) => `https://www.givemiamiday.org/story/${person.urn}`;
+
+    const sectionKeys = (person) => [
+      ...(person.instruments || []),
+      ...(person.role === "Teaching Artist" || person.role === "Passista" ? [person.role] : [])
+    ];
+
+    const initialsFor = (name) => name
+      .split(/\s+/)
+      .filter((part) => /[a-z0-9]/i.test(part[0] || ""))
+      .map((part) => part[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase();
+
+    function renderPeople() {
+      const list = document.getElementById("people-list");
+
+      list.innerHTML = FUNDRAISERS.map((person, index) => {
+        const instruments = person.instruments || [];
+        const sectionRole = person.role === "Teaching Artist" || person.role === "Passista"
+          ? person.role
+          : "";
+        const accent = INSTRUMENT_COLORS[instruments[0]]
+          || SECTION_COLORS[sectionRole]
+          || ["#F6B53C", "#F54500", "#10BC7D", "#6A3EBD", "#FF4D8D"][index % 5];
+        const searchText = normalize([
+          person.name,
+          ...instruments,
+          sectionRole,
+          person.note || "",
+          "miamibloco",
+          "fundraiser"
+        ].join(" "));
+        const descriptor = [...instruments, sectionRole].filter(Boolean).join(", ");
+
+        return `
+          <li class="person-item" data-search="${escapeHtml(searchText)}">
+            <a class="person" href="${escapeHtml(personSlug(person))}" target="_blank" rel="noopener"
+               aria-label="Open ${escapeHtml(person.name)}'s fundraiser page — ${escapeHtml(descriptor)}">
+              <span class="avatar" style="--accent:${accent}" aria-hidden="true">
+                <span>${escapeHtml(initialsFor(person.name))}</span>
+                ${person.photo ? `<img src="${escapeHtml(person.photo)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ""}
+              </span>
+              <span class="person-body">
+                <span class="person-name">${escapeHtml(person.name)}</span>
+                <span class="tags">
+                  ${instruments.map((instrument) => `<span class="tag tag-instrument" style="--accent:${INSTRUMENT_COLORS[instrument] || accent}">${escapeHtml(instrument)}</span>`).join("")}
+                  ${sectionRole ? `<span class="tag tag-role">${escapeHtml(sectionRole)}</span>` : ""}
+                  ${person.note ? `<span class="tag tag-note">${escapeHtml(person.note)}</span>` : ""}
+                </span>
+              </span>
+              <span class="person-money">
+                <strong>${money(person.raisedCents)}</strong>
+                <span>of ${money(person.goalCents)}</span>
+              </span>
+              <span class="go" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        `;
+      }).join("");
+    }
+
+    function buildGroups(getKeys, preferredOrder) {
+      const grouped = new Map(preferredOrder.map((name) => [name, []]));
+
+      FUNDRAISERS.forEach((person) => {
+        getKeys(person).forEach((key) => {
+          if (!grouped.has(key)) grouped.set(key, []);
+          grouped.get(key).push(person);
+        });
+      });
+
+      return [...grouped.entries()]
+        .map(([name, people]) => {
+          const raisedCents = people.reduce((total, person) => total + person.raisedCents, 0);
+          const participants = people.filter((person) => person.raisedCents > 0).length;
+          return {
+            name,
+            people,
+            raisedCents,
+            participants,
+            pct: people.length > 0 ? (participants / people.length) * 100 : null
+          };
+        })
+        .sort((a, b) => {
+          if (a.pct === null && b.pct === null) return a.name.localeCompare(b.name);
+          if (a.pct === null) return 1;
+          if (b.pct === null) return -1;
+          if (b.pct !== a.pct) return b.pct - a.pct;
+          if (b.participants !== a.participants) return b.participants - a.participants;
+          if (b.people.length !== a.people.length) return b.people.length - a.people.length;
+          return a.name.localeCompare(b.name);
+        });
+    }
+
+    function renderGroups(targetId, groups, colorMap) {
+      const target = document.getElementById(targetId);
+
+      target.innerHTML = groups.map((group, index) => {
+        const isEmpty = group.people.length === 0;
+        const accent = colorMap[group.name] || ["#F6B53C", "#F54500", "#10BC7D", "#6A3EBD", "#FF4D8D"][index % 5];
+        const width = isEmpty ? 0 : Math.max(0, Math.min(100, group.pct));
+        const count = group.people.length;
+        const verb = count === 1 ? "has" : "have";
+        const subLeft = isEmpty ? "No participants yet" : `${group.participants} of ${count} ${verb} raised`;
+        const subRight = isEmpty ? "Be the first" : `${money(group.raisedCents)} raised`;
+
+        return `
+          <li class="group-row${isEmpty ? " group-row--empty" : ""}" style="--accent:${accent}">
+            <div class="group-head">
+              <span class="rank" aria-hidden="true">${index + 1}</span>
+              <span class="group-name">${escapeHtml(group.name)}</span>
+              <span class="group-pct">${percentLabel(isEmpty ? null : group.pct)}</span>
+            </div>
+            <div class="track" aria-hidden="true"><span class="fill" style="width:${width}%"></span></div>
+            <div class="group-sub">
+              <span>${subLeft}</span>
+              <span>${subRight}</span>
+            </div>
+          </li>
+        `;
+      }).join("");
+    }
+
+    function renderStats() {
+      const personalRaised = FUNDRAISERS.reduce((total, person) => total + person.raisedCents, 0);
+      const campaignRaised = Number.isFinite(CAMPAIGN.raisedCents) ? CAMPAIGN.raisedCents : personalRaised;
+      const pct = CAMPAIGN.goalCents > 0 ? (campaignRaised / CAMPAIGN.goalCents) * 100 : 0;
+      const participating = FUNDRAISERS.filter((person) => person.raisedCents > 0).length;
+      const participationPct = FUNDRAISERS.length > 0 ? (participating / FUNDRAISERS.length) * 100 : 0;
+
+      document.getElementById("overall-pct").textContent = percentLabel(pct);
+      document.getElementById("overall-raised").textContent = money(campaignRaised);
+      document.getElementById("overall-goal").textContent = money(CAMPAIGN.goalCents);
+      document.getElementById("overall-fill").style.width = `${Math.max(0, Math.min(100, pct))}%`;
+      document.getElementById("stat-raised").textContent = money(personalRaised);
+      document.getElementById("stat-people").textContent = String(FUNDRAISERS.length);
+      document.getElementById("stat-participating").textContent = percentLabel(participationPct);
+      document.getElementById("stat-participating-note").textContent = `${participating} of ${FUNDRAISERS.length} have raised more than $0`;
+
+      const roleCounts = FUNDRAISERS.reduce((counts, person) => {
+        counts[person.role] = (counts[person.role] || 0) + 1;
+        return counts;
+      }, {});
+      const roleBits = [
+        [roleCounts["Teaching Artist"], "teaching artists"],
+        [roleCounts["Passista"], "passistas"]
+      ]
+        .filter(([count]) => count > 0)
+        .map(([count, label]) => `${count} ${label}`);
+
+      document.getElementById("footer-totals").textContent = `${money(campaignRaised)} raised · ${percentLabel(pct)} of goal`;
+      document.getElementById("footer-people").textContent = `${FUNDRAISERS.length} personal pages · ${participating} participating · ${roleBits.join(" · ")}`;
+      document.getElementById("snapshot-date").textContent = new Intl.DateTimeFormat("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+      }).format(new Date(`${CAMPAIGN.snapshot}T12:00:00`));
+    }
+
+    function setupSearch() {
+      const input = document.getElementById("person-search");
+      const clearButton = document.getElementById("clear-search");
+      const resetButton = document.getElementById("reset-search");
+      const status = document.getElementById("search-status");
+      const emptyState = document.getElementById("empty-state");
+      const list = document.getElementById("people-list");
+      const items = [...list.querySelectorAll(".person-item")];
+      const total = FUNDRAISERS.length;
+
+      const visibleLinks = () => items
+        .filter((item) => !item.hidden)
+        .map((item) => item.querySelector(".person"));
+
+      function applySearch(rawValue) {
+        const tokens = normalize(rawValue).split(/\s+/).filter(Boolean);
+
+        let matches = 0;
+        items.forEach((item) => {
+          const isMatch = tokens.every((token) => item.dataset.search.includes(token));
+          item.hidden = !isMatch;
+          if (isMatch) matches += 1;
+        });
+
+        const hasQuery = tokens.length > 0;
+        clearButton.hidden = !hasQuery;
+        emptyState.hidden = matches !== 0;
+        list.hidden = matches === 0;
+
+        if (!hasQuery) {
+          status.textContent = `Showing all ${total} people`;
+        } else if (matches === 1) {
+          status.textContent = `1 person matches “${rawValue.trim()}”`;
+        } else if (matches > 1) {
+          status.textContent = `${matches} people match “${rawValue.trim()}”`;
+        } else {
+          status.textContent = `No matches for “${rawValue.trim()}”`;
+        }
+      }
+
+      input.addEventListener("input", (event) => applySearch(event.target.value));
+
+      clearButton.addEventListener("click", () => {
+        input.value = "";
+        applySearch("");
+        input.focus();
+      });
+
+      resetButton.addEventListener("click", () => {
+        input.value = "";
+        applySearch("");
+        input.focus();
+      });
+
+      input.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const links = visibleLinks();
+          if (links.length === 1) {
+            event.preventDefault();
+            links[0].click();
+          }
+        }
+
+        if (event.key === "ArrowDown") {
+          const first = visibleLinks()[0];
+          if (first) {
+            event.preventDefault();
+            first.focus();
+          }
+        }
+      });
+
+      list.addEventListener("keydown", (event) => {
+        const links = visibleLinks();
+        const currentIndex = links.indexOf(document.activeElement);
+
+        if (event.key === "ArrowDown" && currentIndex > -1) {
+          event.preventDefault();
+          const next = links[Math.min(currentIndex + 1, links.length - 1)];
+          next?.focus();
+        }
+
+        if (event.key === "ArrowUp" && currentIndex > -1) {
+          event.preventDefault();
+          if (currentIndex === 0) {
+            input.focus();
+          } else {
+            links[currentIndex - 1]?.focus();
+          }
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        const target = event.target;
+        const isTyping = target instanceof HTMLElement && (
+          target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable
+        );
+
+        if (event.key === "/" && !isTyping) {
+          event.preventDefault();
+          input.focus();
+          input.select();
+        }
+
+        if (event.key === "Escape" && document.activeElement === input) {
+          input.value = "";
+          applySearch("");
+        }
+      });
+
+      applySearch("");
+    }
+
+    renderPeople();
+    renderStats();
+    renderGroups("section-groups", buildGroups(sectionKeys, SECTION_GROUPS), SECTION_COLORS);
+    setupSearch();
+  </script>
+</body>
+</html>
