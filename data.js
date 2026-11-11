@@ -179,7 +179,7 @@ window.DASHBOARD_DATA = {
     {
       "name": "Barbara",
       "instruments": [
-        "Caixa"
+        "Tamborim"
       ],
       "role": "Student Member",
       "raisedCents": 0,
@@ -545,7 +545,7 @@ window.DASHBOARD_DATA = {
       "raisedCents": 0,
       "goalCents": 30500,
       "urn": "w8x6eg",
-      "photo": "https://imagecdn.mightycause.com/fe22c821-7e5e-49b5-b375-11658145f5a0/-/crop/1067x602/0,243/-/preview/-/resize/300/"
+      "photo": "https://imagecdn.mightycause.com/a506063a-bdba-46af-ab1e-7862d8279ab7/-/crop/1253x704/0,140/-/preview/-/resize/300/"
     },
     {
       "name": "Luli",
