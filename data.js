@@ -2,7 +2,7 @@ window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
     "raisedCents": 0,
-    "snapshot": "2026-11-06",
+    "snapshot": "2026-11-11",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
   "fundraisers": [
@@ -437,6 +437,15 @@ window.DASHBOARD_DATA = {
       "photo": "https://imagecdn.mightycause.com/bf820b6a-4c0f-48d9-970f-68d6344bf531/-/crop/3320x1866/186,140/-/preview/-/resize/300/"
     },
     {
+      "name": "Juliana",
+      "instruments": [],
+      "role": "Passista",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "0wwszf",
+      "photo": "https://imagecdn.mightycause.com/a303cfe2-489d-49ec-b185-9b779c4424dc/-/crop/2022x1135/0,125/-/preview/-/resize/300/"
+    },
+    {
       "name": "Julio",
       "instruments": [
         "Timbau"
@@ -457,6 +466,15 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "5whjpf",
       "photo": "https://imagecdn.mightycause.com/95859ee7-fe2d-444c-822d-40b4d8706065/-/crop/831x469/552,246/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Katie",
+      "instruments": [],
+      "role": "Passista",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "xs1ggg",
+      "photo": "https://imagecdn.mightycause.com/ffbde8ec-1935-4b66-955b-b90c6c3c5398/-/crop/459x259/0,49/-/preview/-/resize/300/"
     },
     {
       "name": "Kevin",
@@ -508,6 +526,17 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "sdqnwe",
       "photo": "https://imagecdn.mightycause.com/ecdd8523-6b96-4c83-837b-5062c020011c/-/crop/1020x573/0,149/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Lukie",
+      "instruments": [
+        "Caixa"
+      ],
+      "role": "Student Member",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "w8x6eg",
+      "photo": "https://imagecdn.mightycause.com/fe22c821-7e5e-49b5-b375-11658145f5a0/-/crop/1067x602/0,243/-/preview/-/resize/300/"
     },
     {
       "name": "Luli",
@@ -573,7 +602,7 @@ window.DASHBOARD_DATA = {
       "raisedCents": 0,
       "goalCents": 30500,
       "urn": "Vg8agg",
-      "photo": "https://imagecdn.mightycause.com/a8d8f082-e611-415e-9e6b-366de98f4561/-/crop/6000x3375/0,313/-/preview/-/resize/300/"
+      "photo": "https://imagecdn.mightycause.com/89551508-f8a8-4955-893e-760b4d2203a3/-/crop/2866x1611/0,460/-/preview/-/resize/300/"
     },
     {
       "name": "Mariana",
@@ -768,6 +797,15 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "mjqwmf",
       "photo": "https://imagecdn.mightycause.com/324b989d-38b6-49af-8ce5-890acc3597c1/-/crop/2465x1387/350,890/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Sam",
+      "instruments": [],
+      "role": "Passista",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "htbtff",
+      "photo": "https://imagecdn.mightycause.com/ab17c9a7-aa6d-43ac-b802-4907871f2a9e/-/crop/1206x677/0,476/-/preview/-/resize/300/"
     },
     {
       "name": "Simon",
