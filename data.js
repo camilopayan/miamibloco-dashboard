@@ -528,6 +528,15 @@ window.DASHBOARD_DATA = {
       "photo": "https://imagecdn.mightycause.com/ecdd8523-6b96-4c83-837b-5062c020011c/-/crop/1020x573/0,149/-/preview/-/resize/300/"
     },
     {
+      "name": "Lexi",
+      "instruments": [],
+      "role": "Passista",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "kuef8f",
+      "photo": "https://imagecdn.mightycause.com/03778428-e79f-4eaa-ae8e-48a1791a4fa2/-/crop/2072x1165/1146,718/-/preview/-/resize/300/"
+    },
+    {
       "name": "Lukie",
       "instruments": [
         "Caixa"
