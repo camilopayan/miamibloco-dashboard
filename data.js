@@ -2,7 +2,7 @@ window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
     "raisedCents": 0,
-    "snapshot": "2026-11-11",
+    "snapshot": "2026-11-13",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
   "fundraisers": [
@@ -495,6 +495,15 @@ window.DASHBOARD_DATA = {
       "goalCents": 30500,
       "urn": "C6uwtf",
       "photo": "https://imagecdn.mightycause.com/4e0ec232-e8c6-4148-96fb-d8167a6f4c3e/-/crop/1179x663/0,72/-/preview/-/resize/300/"
+    },
+    {
+      "name": "Kristell",
+      "instruments": [],
+      "role": "Passista",
+      "raisedCents": 0,
+      "goalCents": 30500,
+      "urn": "jd4nqf",
+      "photo": "https://imagecdn.mightycause.com/78ae0ae6-08e8-4fd8-b440-ca8f38d3465c/-/crop/1600x900/0,78/-/preview/-/resize/300/"
     },
     {
       "name": "Krystal",
