@@ -116,6 +116,14 @@ previous snapshot date so no empty commit is created.
 - A few pages do not follow the usual `Name - Instrument (Role)` pattern.
   These are handled explicitly in `parse_fundraiser()`:
   Geisy & JJ, Michelle (Passista), and VP KeKe.
+- Pages that cannot be parsed automatically are listed in `TITLE_OVERRIDES` at
+  the top of `scripts/scrape.py`, keyed by their exact API title. For example,
+  `"Isa- Ritmista & Volunteer"` is mapped to the Ganzá section. Add an entry
+  there when a new page does not fit the normal pattern.
+
+If one or more titles cannot be parsed, the script reports every problem title
+in a single run and exits without writing `data.js`, so no partial data is
+published.
 
 ## Participation formula
 

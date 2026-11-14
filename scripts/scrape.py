@@ -47,6 +47,17 @@ ROLE_PRIORITY = ["Teaching Artist", "Passista", "Hype Squad"]
 HIDDEN_ROLES = {"Student Member", "Hype Squad"}
 DEFAULT_ROLE = "Student Member"
 
+# Pages whose titles do not follow the usual "Name - Instrument (Role)" shape.
+# Keyed by the exact API title. Add an entry here when a new page cannot be
+# parsed automatically.
+TITLE_OVERRIDES: dict[str, dict] = {
+    "Isa- Ritmista & Volunteer": {
+        "name": "Isa",
+        "instruments": ["Ganzá"],
+        "note": "Ritmista & Volunteer",
+    },
+}
+
 
 def strip_accents(value: str) -> str:
     return "".join(
@@ -106,21 +117,28 @@ def parse_fundraiser(row: dict) -> dict:
     if not raw_title:
         raise ValueError("fundraiser has no title")
 
-    lower_title = raw_title.lower()
-    role = find_role(raw_title)
-    instruments = find_instruments(raw_title)
-    note = ""
-
-    # A few pages do not follow the usual "Name - Instrument (Role)" shape.
-    if lower_title.startswith("geisy"):
-        name = "Geisy & JJ"
-        note = "mom & son"
-    elif lower_title.startswith("michelle-passista"):
-        name = "Michelle"
-    elif lower_title.startswith("vp keke"):
-        name = "VP KeKe"
+    override = TITLE_OVERRIDES.get(raw_title)
+    if override:
+        name = override.get("name", "")
+        instruments = list(override.get("instruments", []))
+        role = override.get("role", DEFAULT_ROLE)
+        note = override.get("note", "")
     else:
-        name = re.split(r"\s+-\s+", raw_title, maxsplit=1)[0].strip()
+        lower_title = raw_title.lower()
+        role = find_role(raw_title)
+        instruments = find_instruments(raw_title)
+        note = ""
+
+        # A few pages do not follow the usual "Name - Instrument (Role)" shape.
+        if lower_title.startswith("geisy"):
+            name = "Geisy & JJ"
+            note = "mom & son"
+        elif lower_title.startswith("michelle-passista"):
+            name = "Michelle"
+        elif lower_title.startswith("vp keke"):
+            name = "VP KeKe"
+        else:
+            name = re.split(r"\s+-\s+", raw_title, maxsplit=1)[0].strip()
 
     if not name:
         raise ValueError(f"could not parse a name from {raw_title!r}")
@@ -174,6 +192,7 @@ def fetch_campaign() -> dict:
 def fetch_fundraisers() -> tuple[list[dict], int | None]:
     fundraisers: dict[str, dict] = {}
     reported_total: int | None = None
+    parse_errors: list[str] = []
     page = 1
     previous_urn_count = 0
 
@@ -188,10 +207,16 @@ def fetch_fundraisers() -> tuple[list[dict], int | None]:
             break
 
         for row in rows:
-            record = parse_fundraiser(row)
+            try:
+                record = parse_fundraiser(row)
+            except ValueError as error:
+                parse_errors.append(f"{row.get('title')!r}: {error}")
+                continue
+
             urn = record["urn"]
             if urn in fundraisers:
-                raise ValueError(f"duplicate fundraiser urn: {urn}")
+                parse_errors.append(f"{row.get('title')!r}: duplicate urn {urn}")
+                continue
             fundraisers[urn] = record
 
         # The API currently caps at 6 per page. Stop when a short page arrives,
@@ -202,6 +227,11 @@ def fetch_fundraisers() -> tuple[list[dict], int | None]:
         previous_urn_count = len(fundraisers)
         page += 1
         time.sleep(0.15)
+
+    if parse_errors:
+        raise ValueError(
+            "could not parse some fundraisers:\n  - " + "\n  - ".join(parse_errors)
+        )
 
     records = sorted(
         fundraisers.values(),
