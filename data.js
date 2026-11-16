@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 937200,
+    "raisedCents": 997200,
     "snapshot": "2026-11-16",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -142,7 +142,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 7500,
+      "raisedCents": 12500,
       "goalCents": 30500,
       "urn": "L60ekf",
       "photo": "https://imagecdn.mightycause.com/df94bd9a-7ff5-4fc3-8f00-2a9ef7f35585/-/crop/1814x1020/0,190/-/preview/-/resize/300/"
@@ -193,7 +193,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 5000,
       "goalCents": 30500,
       "urn": "djynjf",
       "photo": "https://imagecdn.mightycause.com/67ea9aee-d9f0-4e7e-954a-1282e24ba695/-/crop/1170x660/0,897/-/preview/-/resize/300/"
@@ -213,7 +213,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 22500,
+      "raisedCents": 35000,
       "goalCents": 30500,
       "urn": "udfn3g",
       "photo": "https://imagecdn.mightycause.com/ae03f11d-10ed-4590-98c7-6a68fcf59cf8/-/crop/3024x1702/0,353/-/preview/-/resize/300/"
@@ -266,7 +266,7 @@ window.DASHBOARD_DATA = {
         "Surdo"
       ],
       "role": "Student Member",
-      "raisedCents": 10000,
+      "raisedCents": 15000,
       "goalCents": 30500,
       "urn": "3xwq1f",
       "photo": "https://imagecdn.mightycause.com/4d03d23f-5694-4e4c-a536-8f72985b2421/-/crop/1781x1001/0,317/-/preview/-/resize/300/"
@@ -430,7 +430,7 @@ window.DASHBOARD_DATA = {
       "name": "Jenny",
       "instruments": [],
       "role": "Teaching Artist",
-      "raisedCents": 17500,
+      "raisedCents": 22500,
       "goalCents": 30500,
       "urn": "Mo4p0f",
       "photo": "https://imagecdn.mightycause.com/5ce1483e-a52e-4044-ac12-ad6bc7f0338e/-/crop/3442x1938/0,9/-/preview/-/resize/300/"
@@ -874,7 +874,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 17500,
+      "raisedCents": 27500,
       "goalCents": 30500,
       "urn": "J09r9f",
       "photo": "https://imagecdn.mightycause.com/2729f114-00c0-41eb-b89f-bdd407af28bc/-/crop/1221x686/66,274/-/preview/-/resize/300/"
@@ -885,7 +885,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Hype Squad",
-      "raisedCents": 15000,
+      "raisedCents": 32500,
       "goalCents": 30500,
       "urn": "Tj7yxf",
       "photo": "https://imagecdn.mightycause.com/ab5fa54a-e526-4fd8-9773-5e98966ba02b/-/crop/1170x660/0,611/-/preview/-/resize/300/"
