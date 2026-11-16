@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 839700,
+    "raisedCents": 857200,
     "snapshot": "2026-11-16",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -131,7 +131,7 @@ window.DASHBOARD_DATA = {
       "name": "Andres",
       "instruments": [],
       "role": "Teaching Artist",
-      "raisedCents": 0,
+      "raisedCents": 10000,
       "goalCents": 30500,
       "urn": "Cjljyf",
       "photo": "https://imagecdn.mightycause.com/acd72553-f075-4826-a757-a0cb6c5db191/-/crop/980x551/0,308/-/preview/-/resize/300/"
@@ -874,7 +874,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 5000,
+      "raisedCents": 12500,
       "goalCents": 30500,
       "urn": "J09r9f",
       "photo": "https://imagecdn.mightycause.com/2729f114-00c0-41eb-b89f-bdd407af28bc/-/crop/1221x686/66,274/-/preview/-/resize/300/"
