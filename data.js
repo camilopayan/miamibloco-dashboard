@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 882200,
+    "raisedCents": 937200,
     "snapshot": "2026-11-16",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -78,7 +78,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 48000,
+      "raisedCents": 50500,
       "goalCents": 30500,
       "urn": "0wqypf",
       "photo": "https://imagecdn.mightycause.com/6831a7a1-4d45-4c66-aa09-7d5f02bc2d2c/-/crop/777x436/365,267/-/preview/-/resize/300/"
@@ -142,7 +142,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 7500,
       "goalCents": 30500,
       "urn": "L60ekf",
       "photo": "https://imagecdn.mightycause.com/df94bd9a-7ff5-4fc3-8f00-2a9ef7f35585/-/crop/1814x1020/0,190/-/preview/-/resize/300/"
@@ -162,7 +162,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 10000,
       "goalCents": 30500,
       "urn": "tucxfg",
       "photo": "https://imagecdn.mightycause.com/3a93202f-3b30-448f-b7b1-800be65f20bf/-/crop/3024x1702/0,1169/-/preview/-/resize/300/"
@@ -213,7 +213,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 15000,
+      "raisedCents": 22500,
       "goalCents": 30500,
       "urn": "udfn3g",
       "photo": "https://imagecdn.mightycause.com/ae03f11d-10ed-4590-98c7-6a68fcf59cf8/-/crop/3024x1702/0,353/-/preview/-/resize/300/"
@@ -398,7 +398,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 5000,
+      "raisedCents": 12500,
       "goalCents": 60500,
       "urn": "74s14g",
       "photo": "https://imagecdn.mightycause.com/0303b548-8993-4989-80b4-7a92b580fe42/-/crop/1281x721/0,195/-/preview/-/resize/300/",
@@ -861,7 +861,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 5000,
       "goalCents": 30500,
       "urn": "lne68g",
       "photo": "https://imagecdn.mightycause.com/2a2e2323-1a66-4db0-aeb5-2b376a0a33ff/-/crop/3484x1962/204,675/-/preview/-/resize/300/"
@@ -885,7 +885,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Hype Squad",
-      "raisedCents": 0,
+      "raisedCents": 15000,
       "goalCents": 30500,
       "urn": "Tj7yxf",
       "photo": "https://imagecdn.mightycause.com/ab5fa54a-e526-4fd8-9773-5e98966ba02b/-/crop/1170x660/0,611/-/preview/-/resize/300/"
