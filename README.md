@@ -120,6 +120,9 @@ previous snapshot date so no empty commit is created.
   the top of `scripts/scrape.py`, keyed by their exact API title. For example,
   `"Isa- Ritmista & Volunteer"` is mapped to the Ganzá section. Add an entry
   there when a new page does not fit the normal pattern.
+- Supporting pages that are not people (for example, the mascot page
+  `Tia Folia (Miamibloco's Official Mascot)`) are listed in `EXCLUDED_TITLES`
+  and skipped entirely, so they never appear in the search or section counts.
 
 If one or more titles cannot be parsed, the script reports every problem title
 in a single run and exits without writing `data.js`, so no partial data is

@@ -58,6 +58,13 @@ TITLE_OVERRIDES: dict[str, dict] = {
     },
 }
 
+# Supporting pages that are not people (for example, the campaign mascot).
+# They are skipped entirely so they never break the scrape or show up in the
+# search and section counts. Keyed by the exact API title.
+EXCLUDED_TITLES: set[str] = {
+    "Tia Folia (Miamibloco's Official Mascot)",
+}
+
 
 def strip_accents(value: str) -> str:
     return "".join(
@@ -189,10 +196,11 @@ def fetch_campaign() -> dict:
     }
 
 
-def fetch_fundraisers() -> tuple[list[dict], int | None]:
+def fetch_fundraisers() -> tuple[list[dict], int | None, int]:
     fundraisers: dict[str, dict] = {}
     reported_total: int | None = None
     parse_errors: list[str] = []
+    skipped = 0
     page = 1
     previous_urn_count = 0
 
@@ -207,6 +215,11 @@ def fetch_fundraisers() -> tuple[list[dict], int | None]:
             break
 
         for row in rows:
+            title = (row.get("title") or "").strip()
+            if title in EXCLUDED_TITLES:
+                skipped += 1
+                continue
+
             try:
                 record = parse_fundraiser(row)
             except ValueError as error:
@@ -241,7 +254,7 @@ def fetch_fundraisers() -> tuple[list[dict], int | None]:
     if not records:
         raise ValueError("the API returned no fundraisers")
 
-    return records, reported_total
+    return records, reported_total, skipped
 
 
 def load_existing(path: Path) -> dict | None:
@@ -296,7 +309,7 @@ def main() -> int:
 
     try:
         campaign = fetch_campaign()
-        records, reported_total = fetch_fundraisers()
+        records, reported_total, skipped = fetch_fundraisers()
     except Exception as error:  # noqa: BLE001 - surface a clean failure to the runner
         print(f"error: {error}", file=sys.stderr)
         return 1
@@ -325,10 +338,13 @@ def main() -> int:
     )
 
     print(f"Scraped {len(records)} fundraisers")
-    if reported_total and reported_total != len(records):
+    if skipped:
+        print(f"Skipped {skipped} non-person page(s)")
+    expected_total = len(records) + skipped
+    if reported_total and reported_total != expected_total:
         print(
             f"warning: API reported {reported_total} fundraisers, "
-            f"but {len(records)} were returned",
+            f"but {expected_total} were returned",
             file=sys.stderr,
         )
     print(
