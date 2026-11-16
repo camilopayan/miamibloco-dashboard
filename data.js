@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 857200,
+    "raisedCents": 882200,
     "snapshot": "2026-11-16",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -67,7 +67,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 20000,
+      "raisedCents": 22500,
       "goalCents": 30500,
       "urn": "kyh7dg",
       "photo": "https://imagecdn.mightycause.com/c92dbc2f-60e6-4b25-adc9-86567872f47a/-/crop/1290x728/0,137/-/preview/-/resize/300/"
@@ -78,7 +78,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 45500,
+      "raisedCents": 48000,
       "goalCents": 30500,
       "urn": "0wqypf",
       "photo": "https://imagecdn.mightycause.com/6831a7a1-4d45-4c66-aa09-7d5f02bc2d2c/-/crop/777x436/365,267/-/preview/-/resize/300/"
@@ -398,7 +398,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 5000,
       "goalCents": 60500,
       "urn": "74s14g",
       "photo": "https://imagecdn.mightycause.com/0303b548-8993-4989-80b4-7a92b580fe42/-/crop/1281x721/0,195/-/preview/-/resize/300/",
@@ -561,7 +561,7 @@ window.DASHBOARD_DATA = {
       "name": "Lexi",
       "instruments": [],
       "role": "Passista",
-      "raisedCents": 10000,
+      "raisedCents": 15000,
       "goalCents": 30500,
       "urn": "lexidance",
       "photo": "https://imagecdn.mightycause.com/03778428-e79f-4eaa-ae8e-48a1791a4fa2/-/crop/2072x1165/1146,718/-/preview/-/resize/300/"
@@ -594,7 +594,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 15000,
+      "raisedCents": 20000,
       "goalCents": 30500,
       "urn": "6waz9g",
       "photo": "https://imagecdn.mightycause.com/968c4cbb-c9c7-497e-b9bf-fe870338b829/-/crop/1178x662/0,254/-/preview/-/resize/300/"
@@ -874,7 +874,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 12500,
+      "raisedCents": 17500,
       "goalCents": 30500,
       "urn": "J09r9f",
       "photo": "https://imagecdn.mightycause.com/2729f114-00c0-41eb-b89f-bdd407af28bc/-/crop/1221x686/66,274/-/preview/-/resize/300/"
