@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 1057200,
+    "raisedCents": 1084700,
     "snapshot": "2026-11-17",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -398,7 +398,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 15000,
+      "raisedCents": 20000,
       "goalCents": 60500,
       "urn": "74s14g",
       "photo": "https://imagecdn.mightycause.com/0303b548-8993-4989-80b4-7a92b580fe42/-/crop/1281x721/0,195/-/preview/-/resize/300/",
@@ -594,7 +594,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 20000,
+      "raisedCents": 22500,
       "goalCents": 30500,
       "urn": "6waz9g",
       "photo": "https://imagecdn.mightycause.com/968c4cbb-c9c7-497e-b9bf-fe870338b829/-/crop/1178x662/0,254/-/preview/-/resize/300/"
@@ -605,7 +605,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 15000,
+      "raisedCents": 20000,
       "goalCents": 30500,
       "urn": "Nbfr8f",
       "photo": "https://imagecdn.mightycause.com/6662efc4-ac4f-440b-ad8f-0edabcf541af/-/crop/6000x3375/0,313/-/preview/-/resize/300/"
@@ -861,7 +861,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 15000,
+      "raisedCents": 25000,
       "goalCents": 30500,
       "urn": "lne68g",
       "photo": "https://imagecdn.mightycause.com/2a2e2323-1a66-4db0-aeb5-2b376a0a33ff/-/crop/3484x1962/204,675/-/preview/-/resize/300/"
@@ -885,7 +885,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Hype Squad",
-      "raisedCents": 32500,
+      "raisedCents": 35000,
       "goalCents": 30500,
       "urn": "Tj7yxf",
       "photo": "https://imagecdn.mightycause.com/ab5fa54a-e526-4fd8-9773-5e98966ba02b/-/crop/1170x660/0,611/-/preview/-/resize/300/"
