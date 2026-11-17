@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 999700,
+    "raisedCents": 1057200,
     "snapshot": "2026-11-17",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -56,7 +56,7 @@ window.DASHBOARD_DATA = {
         "Surdo"
       ],
       "role": "Student Member",
-      "raisedCents": 15000,
+      "raisedCents": 17500,
       "goalCents": 30500,
       "urn": "3q5hye",
       "photo": "https://imagecdn.mightycause.com/4676fea4-d966-44c4-b544-b331b3b5c186/-/crop/810x457/0,76/-/preview/-/resize/300/"
@@ -67,7 +67,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 22500,
+      "raisedCents": 35000,
       "goalCents": 30500,
       "urn": "kyh7dg",
       "photo": "https://imagecdn.mightycause.com/c92dbc2f-60e6-4b25-adc9-86567872f47a/-/crop/1290x728/0,137/-/preview/-/resize/300/"
@@ -78,7 +78,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 53000,
+      "raisedCents": 55500,
       "goalCents": 30500,
       "urn": "0wqypf",
       "photo": "https://imagecdn.mightycause.com/6831a7a1-4d45-4c66-aa09-7d5f02bc2d2c/-/crop/777x436/365,267/-/preview/-/resize/300/"
@@ -162,7 +162,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 10000,
+      "raisedCents": 15000,
       "goalCents": 30500,
       "urn": "tucxfg",
       "photo": "https://imagecdn.mightycause.com/3a93202f-3b30-448f-b7b1-800be65f20bf/-/crop/3024x1702/0,1169/-/preview/-/resize/300/"
@@ -182,7 +182,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 30000,
+      "raisedCents": 32500,
       "goalCents": 30500,
       "urn": "jg0aof",
       "photo": "https://imagecdn.mightycause.com/758c193d-2544-444c-9355-c28b474a287b/-/crop/3840x2162/0,608/-/preview/-/resize/300/"
@@ -398,7 +398,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 12500,
+      "raisedCents": 15000,
       "goalCents": 60500,
       "urn": "74s14g",
       "photo": "https://imagecdn.mightycause.com/0303b548-8993-4989-80b4-7a92b580fe42/-/crop/1281x721/0,195/-/preview/-/resize/300/",
@@ -410,7 +410,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 30500,
+      "raisedCents": 33000,
       "goalCents": 30500,
       "urn": "16wm4f",
       "photo": "https://imagecdn.mightycause.com/8344be8f-8ba3-4e9c-a448-a35dc7b06d75/-/crop/6000x3375/0,128/-/preview/-/resize/300/"
@@ -552,7 +552,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 5000,
       "goalCents": 30500,
       "urn": "sdqnwe",
       "photo": "https://imagecdn.mightycause.com/ecdd8523-6b96-4c83-837b-5062c020011c/-/crop/1020x573/0,149/-/preview/-/resize/300/"
@@ -638,7 +638,7 @@ window.DASHBOARD_DATA = {
         "Repique"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 2500,
       "goalCents": 30500,
       "urn": "Vg8agg",
       "photo": "https://imagecdn.mightycause.com/89551508-f8a8-4955-893e-760b4d2203a3/-/crop/2866x1611/0,460/-/preview/-/resize/300/"
@@ -861,7 +861,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 5000,
+      "raisedCents": 15000,
       "goalCents": 30500,
       "urn": "lne68g",
       "photo": "https://imagecdn.mightycause.com/2a2e2323-1a66-4db0-aeb5-2b376a0a33ff/-/crop/3484x1962/204,675/-/preview/-/resize/300/"
@@ -907,7 +907,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 25000,
+      "raisedCents": 27500,
       "goalCents": 30500,
       "urn": "2try2g",
       "photo": "https://imagecdn.mightycause.com/cb933c92-812d-40d7-87ae-ef3bf6acdfe8/-/crop/5712x3213/0,10/-/preview/-/resize/300/"
