@@ -1,8 +1,8 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 997200,
-    "snapshot": "2026-11-16",
+    "raisedCents": 999700,
+    "snapshot": "2026-11-17",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
   "fundraisers": [
@@ -78,7 +78,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 50500,
+      "raisedCents": 53000,
       "goalCents": 30500,
       "urn": "0wqypf",
       "photo": "https://imagecdn.mightycause.com/6831a7a1-4d45-4c66-aa09-7d5f02bc2d2c/-/crop/777x436/365,267/-/preview/-/resize/300/"
