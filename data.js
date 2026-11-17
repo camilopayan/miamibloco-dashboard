@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 1129700,
+    "raisedCents": 1218200,
     "snapshot": "2026-11-17",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -23,7 +23,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 5000,
       "goalCents": 30500,
       "urn": "H3md5g",
       "photo": "https://imagecdn.mightycause.com/f9d070c1-1f7b-48be-8dd8-e8f2aa71e454/-/crop/2000x1126/0,461/-/preview/-/resize/300/"
@@ -122,7 +122,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 5000,
+      "raisedCents": 7500,
       "goalCents": 30500,
       "urn": "jnvuag",
       "photo": "https://imagecdn.mightycause.com/c64c22dd-55a7-4a45-9b8f-62d6b61aa0f9/-/crop/761x430/635,336/-/preview/-/resize/300/"
@@ -151,7 +151,7 @@ window.DASHBOARD_DATA = {
       "name": "Aramis",
       "instruments": [],
       "role": "Teaching Artist",
-      "raisedCents": 12500,
+      "raisedCents": 17500,
       "goalCents": 30500,
       "urn": "Bq7fxe",
       "photo": "https://imagecdn.mightycause.com/4ea4f38a-3037-4d16-ab0c-3562ae7387f5/-/crop/2048x1153/0,56/-/preview/-/resize/300/"
@@ -182,7 +182,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 32500,
+      "raisedCents": 42500,
       "goalCents": 30500,
       "urn": "jg0aof",
       "photo": "https://imagecdn.mightycause.com/758c193d-2544-444c-9355-c28b474a287b/-/crop/3840x2162/0,608/-/preview/-/resize/300/"
@@ -193,7 +193,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 5000,
+      "raisedCents": 7500,
       "goalCents": 30500,
       "urn": "djynjf",
       "photo": "https://imagecdn.mightycause.com/67ea9aee-d9f0-4e7e-954a-1282e24ba695/-/crop/1170x660/0,897/-/preview/-/resize/300/"
@@ -222,7 +222,7 @@ window.DASHBOARD_DATA = {
       "name": "Catalina",
       "instruments": [],
       "role": "Passista",
-      "raisedCents": 0,
+      "raisedCents": 2500,
       "goalCents": 30500,
       "urn": "0o2bsf",
       "photo": "https://imagecdn.mightycause.com/4ccbf448-a12d-45e4-881c-54df764ee44c/-/crop/6000x3375/0,0/-/preview/-/resize/300/"
@@ -319,7 +319,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 5000,
+      "raisedCents": 7500,
       "goalCents": 30500,
       "urn": "65oawe",
       "photo": "https://imagecdn.mightycause.com/e2cb8746-bb27-450a-8dba-28d00446c422/-/crop/700x395/543,309/-/preview/-/resize/300/"
@@ -354,7 +354,7 @@ window.DASHBOARD_DATA = {
         "Repique"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 12500,
       "goalCents": 30500,
       "urn": "8abaig",
       "photo": "https://imagecdn.mightycause.com/5e411263-3794-48c6-b4a8-b2938a6c75e7/-/crop/1024x577/0,377/-/preview/-/resize/300/"
@@ -430,7 +430,7 @@ window.DASHBOARD_DATA = {
       "name": "Jenny",
       "instruments": [],
       "role": "Teaching Artist",
-      "raisedCents": 22500,
+      "raisedCents": 25000,
       "goalCents": 30500,
       "urn": "Mo4p0f",
       "photo": "https://imagecdn.mightycause.com/5ce1483e-a52e-4044-ac12-ad6bc7f0338e/-/crop/3442x1938/0,9/-/preview/-/resize/300/"
@@ -885,7 +885,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Hype Squad",
-      "raisedCents": 35000,
+      "raisedCents": 42500,
       "goalCents": 30500,
       "urn": "Tj7yxf",
       "photo": "https://imagecdn.mightycause.com/ab5fa54a-e526-4fd8-9773-5e98966ba02b/-/crop/1170x660/0,611/-/preview/-/resize/300/"
