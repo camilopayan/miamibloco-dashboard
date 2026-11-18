@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 1439200,
+    "raisedCents": 1557200,
     "snapshot": "2026-11-18",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -78,7 +78,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 55500,
+      "raisedCents": 68000,
       "goalCents": 30500,
       "urn": "0wqypf",
       "photo": "https://imagecdn.mightycause.com/6831a7a1-4d45-4c66-aa09-7d5f02bc2d2c/-/crop/777x436/365,267/-/preview/-/resize/300/"
@@ -266,7 +266,7 @@ window.DASHBOARD_DATA = {
         "Surdo"
       ],
       "role": "Student Member",
-      "raisedCents": 25000,
+      "raisedCents": 30000,
       "goalCents": 30500,
       "urn": "3xwq1f",
       "photo": "https://imagecdn.mightycause.com/4d03d23f-5694-4e4c-a536-8f72985b2421/-/crop/1781x1001/0,317/-/preview/-/resize/300/"
@@ -365,7 +365,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 2500,
+      "raisedCents": 5000,
       "goalCents": 30500,
       "urn": "g70ugg",
       "photo": "https://imagecdn.mightycause.com/460ebd97-150a-48d5-84ad-3fcba96f36cb/-/crop/2744x1545/0,569/-/preview/-/resize/300/"
@@ -441,7 +441,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 7500,
       "goalCents": 30500,
       "urn": "7ljfkf",
       "photo": "https://imagecdn.mightycause.com/88dd4c1b-6fa6-4cef-97e2-0c6b3542c1a9/-/crop/1021x575/460,247/-/preview/-/resize/300/"
@@ -452,7 +452,7 @@ window.DASHBOARD_DATA = {
         "Surdo"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 10000,
       "goalCents": 30500,
       "urn": "y7u5if",
       "photo": "https://imagecdn.mightycause.com/bf820b6a-4c0f-48d9-970f-68d6344bf531/-/crop/3320x1866/186,140/-/preview/-/resize/300/"
@@ -483,7 +483,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 20000,
+      "raisedCents": 37500,
       "goalCents": 30500,
       "urn": "5whjpf",
       "photo": "https://imagecdn.mightycause.com/95859ee7-fe2d-444c-822d-40b4d8706065/-/crop/831x469/552,246/-/preview/-/resize/300/"
@@ -627,7 +627,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 7500,
+      "raisedCents": 12500,
       "goalCents": 30500,
       "urn": "xbg2af",
       "photo": "https://imagecdn.mightycause.com/35b47ed8-34d4-4ed7-99a8-f90d10908aba/-/crop/1290x724/0,391/-/preview/-/resize/300/"
@@ -680,7 +680,7 @@ window.DASHBOARD_DATA = {
         "Surdo"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 15000,
       "goalCents": 30500,
       "urn": "xyza9f",
       "photo": "https://imagecdn.mightycause.com/37a1c060-bdc3-49cb-bbaa-a857f4247400/-/crop/3863x2171/0,164/-/preview/-/resize/300/"
@@ -711,7 +711,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 2500,
       "goalCents": 30500,
       "urn": "9b38cf",
       "photo": "https://imagecdn.mightycause.com/f6adf99c-7596-4f27-b4bf-6ae906702416/-/crop/3024x1703/0,307/-/preview/-/resize/300/"
@@ -742,7 +742,7 @@ window.DASHBOARD_DATA = {
       "name": "Murph",
       "instruments": [],
       "role": "Teaching Artist",
-      "raisedCents": 0,
+      "raisedCents": 2500,
       "goalCents": 30500,
       "urn": "x4un2g",
       "photo": "https://imagecdn.mightycause.com/4b4791e1-d49b-416b-a15b-af966fcf0c4c/-/crop/938x528/495,181/-/preview/-/resize/300/"
@@ -874,7 +874,7 @@ window.DASHBOARD_DATA = {
         "Tamborim"
       ],
       "role": "Student Member",
-      "raisedCents": 27500,
+      "raisedCents": 58000,
       "goalCents": 30500,
       "urn": "J09r9f",
       "photo": "https://imagecdn.mightycause.com/2729f114-00c0-41eb-b89f-bdd407af28bc/-/crop/1221x686/66,274/-/preview/-/resize/300/"
