@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 1331200,
+    "raisedCents": 1406200,
     "snapshot": "2026-11-18",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -151,7 +151,7 @@ window.DASHBOARD_DATA = {
       "name": "Aramis",
       "instruments": [],
       "role": "Teaching Artist",
-      "raisedCents": 27500,
+      "raisedCents": 30000,
       "goalCents": 30500,
       "urn": "Bq7fxe",
       "photo": "https://imagecdn.mightycause.com/4ea4f38a-3037-4d16-ab0c-3562ae7387f5/-/crop/2048x1153/0,56/-/preview/-/resize/300/"
@@ -354,7 +354,7 @@ window.DASHBOARD_DATA = {
         "Repique"
       ],
       "role": "Student Member",
-      "raisedCents": 22500,
+      "raisedCents": 27500,
       "goalCents": 30500,
       "urn": "8abaig",
       "photo": "https://imagecdn.mightycause.com/5e411263-3794-48c6-b4a8-b2938a6c75e7/-/crop/1024x577/0,377/-/preview/-/resize/300/"
@@ -376,7 +376,7 @@ window.DASHBOARD_DATA = {
         "Repique"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 2500,
       "goalCents": 30500,
       "urn": "4mj02f",
       "photo": "https://imagecdn.mightycause.com/3764cb33-393a-4364-9b61-fc579fa6a589/-/crop/4032x2267/0,145/-/preview/-/resize/300/"
@@ -483,7 +483,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 20000,
       "goalCents": 30500,
       "urn": "5whjpf",
       "photo": "https://imagecdn.mightycause.com/95859ee7-fe2d-444c-822d-40b4d8706065/-/crop/831x469/552,246/-/preview/-/resize/300/"
@@ -627,7 +627,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 0,
+      "raisedCents": 5000,
       "goalCents": 30500,
       "urn": "xbg2af",
       "photo": "https://imagecdn.mightycause.com/35b47ed8-34d4-4ed7-99a8-f90d10908aba/-/crop/1290x724/0,391/-/preview/-/resize/300/"
@@ -638,7 +638,7 @@ window.DASHBOARD_DATA = {
         "Repique"
       ],
       "role": "Student Member",
-      "raisedCents": 2500,
+      "raisedCents": 7500,
       "goalCents": 30500,
       "urn": "Vg8agg",
       "photo": "https://imagecdn.mightycause.com/89551508-f8a8-4955-893e-760b4d2203a3/-/crop/2866x1611/0,460/-/preview/-/resize/300/"
