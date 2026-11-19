@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 2124200,
+    "raisedCents": 2167200,
     "snapshot": "2026-11-19",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -45,7 +45,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 14000,
+      "raisedCents": 16500,
       "goalCents": 30500,
       "urn": "5588ig",
       "photo": "https://imagecdn.mightycause.com/d57c9e27-063d-48f3-b9b9-8d0f3fa8bbf8/-/crop/871x491/500,301/-/preview/-/resize/300/"
@@ -56,7 +56,7 @@ window.DASHBOARD_DATA = {
         "Surdo"
       ],
       "role": "Student Member",
-      "raisedCents": 25000,
+      "raisedCents": 32500,
       "goalCents": 30500,
       "urn": "3q5hye",
       "photo": "https://imagecdn.mightycause.com/4676fea4-d966-44c4-b544-b331b3b5c186/-/crop/810x457/0,76/-/preview/-/resize/300/"
@@ -142,7 +142,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 27500,
+      "raisedCents": 30500,
       "goalCents": 30500,
       "urn": "L60ekf",
       "photo": "https://imagecdn.mightycause.com/df94bd9a-7ff5-4fc3-8f00-2a9ef7f35585/-/crop/1814x1020/0,190/-/preview/-/resize/300/"
@@ -213,7 +213,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 37500,
+      "raisedCents": 47500,
       "goalCents": 30500,
       "urn": "udfn3g",
       "photo": "https://imagecdn.mightycause.com/ae03f11d-10ed-4590-98c7-6a68fcf59cf8/-/crop/3024x1702/0,353/-/preview/-/resize/300/"
@@ -594,7 +594,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 30000,
+      "raisedCents": 32500,
       "goalCents": 30500,
       "urn": "6waz9g",
       "photo": "https://imagecdn.mightycause.com/968c4cbb-c9c7-497e-b9bf-fe870338b829/-/crop/1178x662/0,254/-/preview/-/resize/300/"
@@ -627,7 +627,7 @@ window.DASHBOARD_DATA = {
         "Ganzá"
       ],
       "role": "Student Member",
-      "raisedCents": 17500,
+      "raisedCents": 20000,
       "goalCents": 30500,
       "urn": "xbg2af",
       "photo": "https://imagecdn.mightycause.com/35b47ed8-34d4-4ed7-99a8-f90d10908aba/-/crop/1290x724/0,391/-/preview/-/resize/300/"
