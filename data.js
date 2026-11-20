@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 2502600,
+    "raisedCents": 2602600,
     "snapshot": "2026-11-20",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
