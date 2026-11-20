@@ -1,7 +1,7 @@
 window.DASHBOARD_DATA = {
   "campaign": {
     "goalCents": 2500000,
-    "raisedCents": 2254700,
+    "raisedCents": 2265700,
     "snapshot": "2026-11-20",
     "sourceUrl": "https://www.givemiamiday.org/organization/Miamibloco"
   },
@@ -45,7 +45,7 @@ window.DASHBOARD_DATA = {
         "Caixa"
       ],
       "role": "Student Member",
-      "raisedCents": 16500,
+      "raisedCents": 19000,
       "goalCents": 30500,
       "urn": "5588ig",
       "photo": "https://imagecdn.mightycause.com/d57c9e27-063d-48f3-b9b9-8d0f3fa8bbf8/-/crop/871x491/500,301/-/preview/-/resize/300/"
@@ -122,7 +122,7 @@ window.DASHBOARD_DATA = {
         "Timbau"
       ],
       "role": "Student Member",
-      "raisedCents": 27500,
+      "raisedCents": 30500,
       "goalCents": 30500,
       "urn": "jnvuag",
       "photo": "https://imagecdn.mightycause.com/c64c22dd-55a7-4a45-9b8f-62d6b61aa0f9/-/crop/761x430/635,336/-/preview/-/resize/300/"
